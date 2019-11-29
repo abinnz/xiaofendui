@@ -34,12 +34,12 @@ class ZhiDeXiangCrawler(object):
             post_detail.mall = item['mall']
             post_detail.content = item['content']
             post_detail.resource = item['resource']
-            if '0818tuan' == item['resource']:
-                post_detail.source = '0818tuan'
+            if 'smzdm' == item['resource']:
+                post_detail.source = item['resourceTag']
             elif 'weibo' == item['resource']:
                 post_detail.source = item['userName']
             else:
-                post_detail.source = item['resourceTag']
+                post_detail.source = item['resource']
             post_detail.permission = item['permission']
             post_detail.name = item['userName']
             post_list.append(post_detail)

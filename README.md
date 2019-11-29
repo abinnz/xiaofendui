@@ -17,10 +17,14 @@ pip install itchat
     "ENABLE_LOGIN": true,
     // 是否推送消息，必填参数
     "ENABLE_PUSH_MSG": true,
+    // 消息是否带上链接
+    "ENABLE_POST_URL": true,
+    // 消息是否带上来源
+    "ENABLE_SHOW_SOURCE": false,
     // 控制台二维码设定，值为1或者2，部分系统需设定为1
     "CONSOLE_CMD_QR": 2,
     // 任务间隔时间，必填参数
-    "TASK_INTERVAL": 5,
+    "TASK_INTERVAL": 30,
     // 推送消息配置，可配置多个群聊
     "MSG_PUSH_CONFIG": [
         {
@@ -54,5 +58,8 @@ pip install itchat
 python main.py
 ```
 
-### 5. 懒人微信群
+### 5. 已知问题
+1. 如遇控制台显示二维码不正常，请修改 ``config.json`` 配置项 ``CONSOLE_CMD_QR`` 值为1
+
+### 6. 懒人微信群
 ![wechat](http://wx1.sinaimg.cn/large/800facaagy1g67r5irl91j217y0u0tem.jpg)

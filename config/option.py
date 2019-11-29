@@ -27,6 +27,8 @@ def get_app_config():
 
 def apply_app_config(app_config):
     config.ENABLE_LOGIN = app_config['ENABLE_LOGIN']
+    config.ENABLE_POST_URL = app_config['ENABLE_POST_URL']
+    config.ENABLE_SHOW_SOURCE = app_config['ENABLE_SHOW_SOURCE']
     config.ENABLE_PUSH_MSG = app_config['ENABLE_PUSH_MSG']
     config.TASK_INTERVAL = app_config['TASK_INTERVAL']
     config.CONSOLE_CMD_QR = app_config['CONSOLE_CMD_QR']

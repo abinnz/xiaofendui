@@ -2,6 +2,10 @@
 ENABLE_LOGIN = True
 # 是否推送消息
 ENABLE_PUSH_MSG = True
+# 消息是否带上链接
+ENABLE_POST_URL = True
+# 消息是否带上来源
+ENABLE_SHOW_SOURCE = False
 # 控制台二维码设定，值为1或者2，部分系统需设定为1
 CONSOLE_CMD_QR = 1
 

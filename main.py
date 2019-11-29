@@ -30,7 +30,7 @@ itchat发送消息
 '''
 def send_msg(post_detail, msg_push_config):
     files = []
-    msg = post_detail.format_msg(True)
+    msg = post_detail.format_msg(config.ENABLE_POST_URL, config.ENABLE_SHOW_SOURCE)
     logging.info('PostDetail -> %s' % str(post_detail))
     if not config.ENABLE_PUSH_MSG:
         logging.info('推送开关已关闭，消息未推送 -> \n%s' % msg)

@@ -3,6 +3,10 @@
     "ENABLE_LOGIN": true,
     // 是否推送消息，必填参数
     "ENABLE_PUSH_MSG": true,
+    // 消息是否带上链接
+    "ENABLE_POST_URL": true,
+    // 消息是否带上来源
+    "ENABLE_SHOW_SOURCE": false,
     // 控制台二维码设定，值为1或者2，部分系统需设定为1
     "CONSOLE_CMD_QR": 2,
     // 任务间隔时间，必填参数

@@ -26,13 +26,18 @@ class PostDetail(object):
         self.tags = []
         self.mall = ''
 
-    def format_msg(self, enable_url=False):
+    def format_msg(self, enable_url=False, enable_source=False):
         if self.title == '':
             content = '%s\n' % (self.content)
         else:
             content = '%s\n\n%s\n' % (self.title, self.content)
+        if self.permission != 0:
+            content = '【权%s】%s' % (self.permission, content)
+        content += '\n'
         if enable_url:
             content += '手机端：%s\n' % (self.url)
+        if not enable_source:
+            return content
         content += '【来源：%s】' % (self.resource)
         if self.resource == 'weibo':
             content += '【%s】' % (self.name)
